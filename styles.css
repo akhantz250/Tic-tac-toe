@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Permanent+Marker&family=Roboto:wght@300;400;500&display=swap');
 
+:root{
+    --blue: rgb(91, 91, 253);
+    --red: rgb(230, 86, 86);
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -34,11 +38,12 @@
 
 .scoreboard{
     display: flex;
-    gap: 250px;
+    gap: 125px;
     justify-content: center;
     align-items: center;
     height: 10vh;
     padding: 15px;
+    margin-top: 30px;
 }
 
 .display-event{
@@ -74,6 +79,45 @@
     user-select: none;
 }
 
+.player-one, .player-two{
+    color: black;
+    padding: 10px;
+
+}
+
+.player-one.active{
+    background-color: rgb(230, 86, 86);
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+}
+
+.player-two.active{
+    background-color: rgb(91, 91, 253);
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+}
+
+.reset{
+    background-color: rgb(50, 173, 36);
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 2px rgb(110, 106, 106);
+}
+
+.reset:hover{
+    background-color: rgb(47, 138, 37);;
+}
+
+.blue{
+    background-color: var(--blue);
+}
+
+.red{
+    background-color: var(--red)
+}
 
   
 
